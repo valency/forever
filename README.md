@@ -20,6 +20,6 @@ Optional arguments:
 ## Examples
 
 ```bash
-python -m forever bash example.sh
-python -m forever -t 3 -i 3 python example.py
+python -m forever bash forever_example.sh
+python -m forever -t 3 -i 3 python -u -m forever_example
 ```
