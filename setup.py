@@ -1,15 +1,21 @@
-from distutils.core import setup
+from os import path
+
+from setuptools import setup, find_packages
+
+with open(path.join(path.abspath(path.dirname(__file__)), 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='forever',
-    version='0.4.5',
-    packages=['.'],
-    url='https://github.com/valency/forever',
-    download_url = 'https://github.com/valency/forever/releases/download/v0.4.5/forever-0.4.5.tar.gz',
-    license='CPL-3.0',
+    version='0.8.8',
+    packages=find_packages(),
+    include_package_data=True,
+    url='https://github.com/valency/forever/',
     author='Deepera Co., Ltd.',
     author_email='yding@deepera.com',
-    description='Forever: auto restart any script when it stops printing.',
-    keywords = ['forever', 'logging', 'auto-restart'],
+    description='Forever: auto restart any script if it stops printing.',
+    long_description=long_description,
+    long_description_content_type='text/x-rst',
+    keywords=['forever', 'logging', 'auto-restart'],
     install_requires=[]
 )
