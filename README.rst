@@ -28,5 +28,5 @@ Examples
 
 .. code:: bash
 
-    python -m forever bash forever_example.sh
-    python -m forever -t 3 -i 3 python -u -m forever_example
+    python -m forever.run bash `curl https://raw.githubusercontent.com/valency/forever/master/forever/example.sh`
+    python -u -m forever.run -t 3 -i 3 python -u -m forever.example
