@@ -64,7 +64,7 @@ class Forever:
 if __name__ == '__main__':
     FORMAT = '[%(asctime)s] %(levelname)s:%(module)s:%(message)s'
     logging.basicConfig(level=logging.INFO, format=FORMAT)
-    parser = argparse.ArgumentParser(usage='python -m forever [OPTIONS] SCRIPT [SCRIPT_ARGS]'.format(sys.argv[0]), )
+    parser = argparse.ArgumentParser(usage='python -m forever.run [OPTIONS] SCRIPT [SCRIPT_ARGS]'.format(sys.argv[0]), )
     parser.add_argument('-t', '--timeout', type=int, default=5, help='timeout in seconds')
     parser.add_argument('-i', '--interval', type=int, default=3, help='waiting interval in seconds')
     args, prog_args = parser.parse_known_args()

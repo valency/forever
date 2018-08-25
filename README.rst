@@ -1,10 +1,10 @@
-==============================
+=======
 Forever
-==============================
+=======
 Auto restart any script if it stops printing.
 
 Install
------
+-------
 
 .. code:: bash
 
@@ -15,7 +15,7 @@ Usage
 
 .. code:: bash
 
-    python -m forever [OPTIONS] SCRIPT [SCRIPT_ARGS]
+    python -m forever.run [OPTIONS] SCRIPT [SCRIPT_ARGS]
 
 Options:
 
@@ -28,5 +28,4 @@ Examples
 
 .. code:: bash
 
-    python -m forever.run bash `curl https://raw.githubusercontent.com/valency/forever/master/forever/example.sh`
-    python -u -m forever.run -t 3 -i 3 python -u -m forever.example
+    python -m forever.run -t 3 -i 3 python -u -m forever.example
