@@ -1,5 +1,3 @@
-#!/bin/bash
-
 v=0
 while true; do
     date
